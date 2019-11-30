@@ -1,14 +1,20 @@
 #!/usr/bin/python3
 
-# Script name: watcher.py
-# Test python code for piwatcher
+# Script name: piwatcher_test.py
+# Test python code for omzlo piwatcher circuit
 # Mark Bradley
 # 2019-11-30
 
 ###################################################################
 # Code to test omzlo watch dog circit.
-# Needs watchdog circuit board fitted and piwatcher programme
-# See omzlo.com
+# Needs watchdog circuit board fitted and piwatcher programme.
+# When a Pi is equiped with the watchdog circuit it will restart 
+# unless you keep pressing enter in less than 10 seconds or use
+# <ctrl> C to break out of the loop, breaking out sets the watchdog 
+# timer to zero - disabled. 
+# The wake command is set to 20 seconds to restart the Pi after that
+# delay.
+# See omzlo.com for details of circuit and piwatcher code.
 ###################################################################
 
 import subprocess
